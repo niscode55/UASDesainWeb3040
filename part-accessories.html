@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PART ACCESSORIES</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="corporate.css" />
+  </head>
+  <body>
+    <section class="display">
+      <!-- Navigasi Utama -->
+      <div class="main-nav">
+        <nav>
+          <a href="index.html">HOME</a>
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">CORPORATE</a>
+            <div class="dropdown-menu">
+              <a href="aboutus.html">About Us</a>
+              <a href="#career">Career</a>
+            </div>
+          </div>
+          <a href="#">PRODUCTS</a>
+          <a class="logo" href="#"><img src="media/logo2.png" alt="logo" /></a>
+          <a href="#" id="partsMenu">PART & ACCESSORIES</a>
+          <a href="dealer.html">DEALER</a>
+        </nav>
+      </div>
+
+      <!-- Layer Part & Accessories -->
+      <div class="part-layer" id="part-layer">
+        <div class="part-categories">
+          <div class="category" data-category="piston">
+            <img src="media/piston.png" alt="Piston" />
+            <p>Fennor Genuine Parts</p>
+          </div>
+          <div class="category" data-category="lube">
+            <img src="media/car-oil.png" alt="Fennolube" />
+            <p>Fennolube</p>
+          </div>
+          <div class="category" data-category="helmet">
+            <img src="media/helmet.png" alt="Helmet" />
+            <p>Helmet</p>
+          </div>
+          <div class="category" data-category="apprael">
+            <img src="media/black.png" alt="Apprael" />
+            <p>Apprael</p>
+          </div>
+          <div class="category" data-category="accessories">
+            <img src="media/side-mirror.png" alt="Accessories" />
+            <p>Accessories</p>
+          </div>
+        </div>
+        <div id="part-items" class="part-items"></div>
+      </div>
+
+      <!-- Layer Produk -->
+      <div class="product-layer" id="product-layer">
+        <div class="product-categories">
+          <div class="category" data-category="sport">
+            <img src="media/icon sport.png" alt="Sport Icon" />
+            <p>Sport</p>
+          </div>
+          <div class="category" data-category="off_road">
+            <img src="media/icon off-road.png" alt="Off-Road Icon" />
+            <p>Off-Road</p>
+          </div>
+          <div class="category" data-category="maxi">
+            <img src="media/icon maxi.png" alt="MAXi Icon" />
+            <p>MAXi</p>
+          </div>
+          <div class="category" data-category="matic">
+            <img src="media/icon matic.png" alt="Matic Icon" />
+            <p>Matic</p>
+          </div>
+          <div class="category" data-category="classy">
+            <img src="media/icon classy.png" alt="Classy Icon" />
+            <p>Classy</p>
+          </div>
+          <div class="category" data-category="moped">
+            <img src="media/icon moped.png" alt="Moped Icon" />
+            <p>Moped</p>
+          </div>
+        </div>
+        <div class="product-items" id="product-items">
+          <!-- Konten produk akan diisi secara dinamis -->
+        </div>
+      </div>
+
+      <!-- Navigasi atas -->
+      <div class="top-nav">
+        <div class="translate-signin">
+          <a href="#translate" class="translate">
+            TRANSLATE
+            <img
+              class="white-logo"
+              src="media/language-exchange.svg"
+              alt="translate"
+            />
+          </a>
+          <div class="separator"></div>
+          <a href="#signin" class="signin">
+            <img class="white-logo" src="media/user.svg" alt="user" />
+            SIGN IN
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--COVER-->
+    <section class="detail">
+      <div
+        class="hero-section"
+        style="
+          background: url('https://i.pinimg.com/736x/a3/fc/2c/a3fc2cdf66d22447d65aa2903395844a.jpg') no-repeat center
+            center;
+          background-size: cover;
+        "
+      >
+        <div class="hero-overlay">
+          <div class="hero-content">
+            <h2 style="font-size: 2.5rem">PART & ACCESSORIESS</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- Breadcrumb -->
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb bread-part">
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Part & Accessories</li>
+    </ol>
+  </nav>
+  
+  <!-- Konten -->
+  <section class="part-accessories" id="part-accessories">
+    <ul class="nav nav-tabs" id="productTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="fennor-genuine-tab" data-bs-toggle="tab" data-bs-target="#fennor-genuine" type="button" role="tab" aria-controls="fennor-genuine" aria-selected="true">Fennor Genuine Parts</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="fennolube-tab" data-bs-toggle="tab" data-bs-target="#fennolube" type="button" role="tab" aria-controls="fennolube" aria-selected="false">Fennolube</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="helmet-tab" data-bs-toggle="tab" data-bs-target="#helmet" type="button" role="tab" aria-controls="helmet" aria-selected="false">Helmet</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="apparel-tab" data-bs-toggle="tab" data-bs-target="#apparel" type="button" role="tab" aria-controls="apparel" aria-selected="false">Apparel</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="accessories-tab" data-bs-toggle="tab" data-bs-target="#accessories" type="button" role="tab" aria-controls="accessories" aria-selected="false">Accessories</button>
+      </li>
+    </ul>
+  
+    <div class="tab-content" id="productTabContent">
+      <!-- Fennor Genuine Parts Tab -->
+      <div class="tab-pane fade show active" id="fennor-genuine" role="tabpanel" aria-labelledby="fennor-genuine-tab">
+        <div class="row">
+          <!-- Card Product 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card card-product">
+              <img src="media/accessories/19.png" alt="Fennor Part 1" class="card-img-top product-image">
+              <div class="card-body product-info">
+                <h5 class="card-title product-name">Fennor Piston Git</h5>
+                <p class="card-text price-product">Rp. 500.000</p>
+                <a href="piston.html" class="btn" style="background-color: #182831; color: #fff;">Detail &rarr;</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card Product 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card card-product">
+              <img src="media/accessories/20.png" alt="Fennor Part 2" class="card-img-top product-image">
+              <div class="card-body product-info">
+                <h5 class="card-title product-name">Fennor Gir</h5>
+                <p class="card-text price-product">Rp. 350.000</p>
+                <a href="gir.html" class="btn" style="background-color: #182831; color: #fff;">Detail &rarr;</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card Product 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card card-product">
+              <img src="media/accessories/21.png" alt="Fennor Part 3" class="card-img-top product-image">
+              <div class="card-body product-info">
+                <h5 class="card-title product-name">Fennor Cylinder Git</h5>
+                <p class="card-text price-product">Rp. 1.200.000</p>
+                <a href="cylinder.html" class="btn" style="background-color: #182831; color: #fff;">Detail &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Fennolube Tab -->
+      <div class="tab-pane fade" id="fennolube" role="tabpanel" aria-labelledby="fennolube-tab">
+        <div class="row">
+          <!-- Card Product 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card card-product">
+              <img src="media/accessories/22.png" alt="Fennolube 1" class="card-img-top product-image">
+              <div class="card-body product-info">
+                <h5 class="card-title product-name">Fennolube Sport</h5>
+                <p class="card-text price-product">Rp. 50.000</p>
+                <a href="fennolube-sport.html" class="btn" style="background-color: #182831; color: #fff;">Detail &rarr;</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card Product 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card card-product">
+              <img src="media/accessories/23.png" alt="Fennolube 2" class="card-img-top product-image">
+              <div class="card-body product-info">
+                <h5 class="card-title product-name">Fennolube 4T</h5>
+                <p class="card-text price-product">Rp. 60.000</p>
+                <a href="fennolube-4t.html" class="btn" style="background-color: #182831; color: #fff;">Detail &rarr;</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card Product 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card card-product">
+              <img src="media/accessories/24.png" alt="Fennolube 3" class="card-img-top product-image">
+              <div class="card-body product-info">
+                <h5 class="card-title product-name">Fennolube Matic</h5>
+                <p class="card-text price-product">Rp. 55.000</p>
+                <a href="fennolube-matic.html" class="btn" style="background-color: #182831; color: #fff;">Detail &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Helmet Tab -->
+      <div class="tab-pane fade" id="helmet" role="tabpanel" aria-labelledby="helmet-tab">
+        <div class="row">
+          <!-- Card Product 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card card-product">
+              <img src="media/accessories/25.png" alt="Helmet 1" class="card-img-top product-image">
+              <div class="card-body product-info">
+                <h5 class="card-title product-name">Fennor X1 Helmet</h5>
+                <p class="card-text price-product">Rp. 1.200.000</p>
+                <a href="helmet1.html" class="btn" style="background-color: #182831; color: #fff;">Detail &rarr;</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card Product 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card card-product">
+              <img src="media/accessories/26.png" alt="Helmet 2" class="card-img-top product-image">
+              <div class="card-body product-info">
+                <h5 class="card-title product-name">Fennor X2 Helmet</h5>
+                <p class="card-text price-product">Rp. 1.500.000</p>
+                <a href="helmet2.html" class="btn" style="background-color: #182831; color: #fff;">Detail &rarr;</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card Product 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card card-product">
+              <img src="media/accessories/27.png" alt="Helmet 3" class="card-img-top product-image">
+              <div class="card-body product-info">
+                <h5 class="card-title product-name">Fennor X3 Helmet</h5>
+                <p class="card-text price-product">Rp. 1.800.000</p>
+                <a href="helmet3.html" class="btn" style="background-color: #182831; color: #fff;">Detail &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Apparel Tab -->
+      <div class="tab-pane fade" id="apparel" role="tabpanel" aria-labelledby="apparel-tab">
+        <div class="row">
+          <!-- Card Product 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card card-product">
+              <img src="media/accessories/28.png" alt="Apparel 1" class="card-img-top product-image">
+              <div class="card-body product-info">
+                <h5 class="card-title product-name">Fennor Riding Jacket</h5>
+                <p class="card-text price-product">Rp. 1.000.000</p>
+                <a href="riding-jacket.html" class="btn" style="background-color: #182831; color: #fff;">Detail &rarr;</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card Product 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card card-product">
+              <img src="media/accessories/29.png" alt="Apparel 2" class="card-img-top product-image">
+              <div class="card-body product-info">
+                <h5 class="card-title product-name">Fennor Riding Gloves</h5>
+                <p class="card-text price-product">Rp. 250.000</p>
+                <a href="riding-gloves.html" class="btn" style="background-color: #182831; color: #fff;">Detail &rarr;</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card Product 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card card-product">
+              <img src="media/accessories/30.png" alt="Apparel 3" class="card-img-top product-image">
+              <div class="card-body product-info">
+                <h5 class="card-title product-name">Fennor Riding Pants</h5>
+                <p class="card-text price-product">Rp. 750.000</p>
+                <a href="riding-pants.html" class="btn" style="background-color: #182831; color: #fff;">Detail &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Accessories Tab -->
+      <div class="tab-pane fade" id="accessories" role="tabpanel" aria-labelledby="accessories-tab">
+        <div class="row">
+          <!-- Card Product 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card card-product">
+              <img src="media/accessories/32.png" alt="Accessory 1" class="card-img-top product-image">
+              <div class="card-body product-info">
+                <h5 class="card-title product-name">Fennor Tank Bag</h5>
+                <p class="card-text price-product">Rp. 450.000</p>
+                <a href="tank-bag.html" class="btn" style="background-color: #182831; color: #fff;">Detail &rarr;</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card Product 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card card-product">
+              <img src="media/accessories/31.png" alt="Accessory 2" class="card-img-top product-image">
+              <div class="card-body product-info">
+                <h5 class="card-title product-name">Fennor Phone Holder</h5>
+                <p class="card-text price-product">Rp. 250.000</p>
+                <a href="phone-holder.html" class="btn" style="background-color: #182831; color: #fff;">Detail &rarr;</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card Product 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card card-product">
+              <img src="media/accessories/33.png" alt="Accessory 3" class="card-img-top product-image">
+              <div class="card-body product-info">
+                <h5 class="card-title product-name">Fennor Side Bag</h5>
+                <p class="card-text price-product">Rp. 800.000</p>
+                <a href="side-bags.html" class="btn" style="background-color: #182831; color: #fff;">Detail &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!--FOOTER-->
+    <section class="footer">
+      <footer class="footer">
+        <div class="footer-columns">
+          <!-- Column 1: Products -->
+          <div class="footer-column">
+            <h3>Corporate</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Career</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 2: Experience -->
+          <div class="footer-column">
+            <h3>Pruducts</h3>
+            <ul>
+              <li><a href="#">Sport</a></li>
+              <li><a href="#">Off-Road</a></li>
+              <li><a href="#">Maxi</a></li>
+              <li><a href="#">Matic</a></li>
+              <li><a href="#">Classy</a></li>
+              <li><a href="#">Moped</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Connect -->
+          <div class="footer-column">
+            <h3>Dealer</h3>
+            <ul>
+              <li><a href="#">Find a Dealer</a></li>
+              <li><a href="#">Contact a Dealer</a></li>
+              <li><a href="#">Owner Manuals</a></li>
+              <li><a href="#">Become a Dealer</a></li>
+              <li><a href="#">Progressive</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Corporate -->
+          <div class="footer-column">
+            <h3>Part</h3>
+            <ul>
+              <li><a href="#">Fennor Genuine Parts</a></li>
+              <li><a href="#">Fennolube</a></li>
+              <li><a href="#">Helmet</a></li>
+              <li><a href="#">Apprael</a></li>
+              <li><a href="#">Accessories</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 5: Logo -->
+          <div class="footer-column logo-column">
+            <img src="media/logo with slogan.png" alt="Fennor Logo" />
+          </div>
+        </div>
+
+        <!-- Contact Server -->
+        <div class="footer-contact">
+          <p>
+            Contact Server: For customer support, please call 1-800-XXX-XXXX or
+            email support@fennor.com
+          </p>
+          <!-- Social Media -->
+          <div class="social-media">
+            <a
+              href="#"
+              class="social-icon"
+              title="Facebook"
+              aria-label="Facebook"
+            >
+              <img class="white-logo" src="media/facebook.svg" alt="Facebook" />
+            </a>
+            <a
+              href="#"
+              class="social-icon"
+              title="Twitter"
+              aria-label="Twitter"
+            >
+              <img class="white-logo" src="media/twitter-x.svg" alt="Twitter" />
+            </a>
+            <a
+              href="#"
+              class="social-icon"
+              title="Instagram"
+              aria-label="Instagram"
+            >
+              <img
+                class="white-logo"
+                src="media/instagram.svg"
+                alt="Instagram"
+              />
+            </a>
+            <a
+              href="#"
+              class="social-icon"
+              title="YouTube"
+              aria-label="YouTube"
+            >
+              <img class="white-logo" src="media/youtube.svg" alt="YouTube" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Horizontal Line -->
+        <hr class="footer-divider" />
+
+        <!-- Copyright -->
+        <div class="footer-copyright">
+          <p>&copy; 2024 Fennor Motor Corporation. All rights reserved.</p>
+          <p>By: Fatira Silvi - K3523030 & Khoirunnisa' - K3523040.</p>
+          <p>
+            Pendidikan Teknik Informatika & Komputer - Universitas Sebelas Maret
+          </p>
+        </div>
+      </footer>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function toggleFeature(id, titleElement) {
+        const content = document.getElementById(id);
+        const icon = titleElement.querySelector("i");
+
+        if (content.classList.contains("active")) {
+          // Menutup konten
+          content.style.maxHeight = null;
+          content.classList.remove("active");
+          titleElement.classList.remove("active");
+          icon.classList.remove("bi-dash");
+          icon.classList.add("bi-plus");
+        } else {
+          // Membuka konten dengan tinggi dinamis
+          content.style.maxHeight = content.scrollHeight + "px"; // Menggunakan scrollHeight untuk penyesuaian otomatis
+          content.classList.add("active");
+          titleElement.classList.add("active");
+          icon.classList.remove("bi-plus");
+          icon.classList.add("bi-dash");
+        }
+      }
+    </script>
+    <script src="script.js"></script>
+    <script src="carousel.js"></script>
+    <script src="product.js"></script>
+    <script src="part.js"></script>
+  </body>
+</html>

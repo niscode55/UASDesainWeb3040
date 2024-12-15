@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fennor Official Website</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="display">
+      <input type="checkbox" id="menu-toggle" style="display: none;">
+        <label for="menu-toggle" class="menu-icon">
+            <span>&#9776;</span>
+        </label>
+      <!-- Navigasi Utama -->
+      <div class="main-nav">
+        <nav>
+          <a href="index.html">HOME</a>
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">CORPORATE</a>
+            <div class="dropdown-menu">
+              <a href="aboutus.html">About Us</a>
+              <a href="#career">Career</a>
+            </div>
+          </div>
+          <a href="#">PRODUCTS</a>
+          <a class="logo" href="index.html"><img src="media/logo2.png" alt="logo" /></a>
+          <a href="#" id="partsMenu">PART & ACCESSORIES</a>
+          <a href="dealer.html">DEALER</a>
+        </nav>
+      </div>
+
+      <!-- Layer Part & Accessories -->
+      <div class="part-layer" id="part-layer">
+        <div class="part-categories">
+          <div class="category" data-category="piston">
+            <img src="media/piston.png" alt="Piston" />
+            <p>Fennor Genuine Parts</p>
+          </div>
+          <div class="category" data-category="lube">
+            <img src="media/car-oil.png" alt="Fennolube" />
+            <p>Fennolube</p>
+          </div>
+          <div class="category" data-category="helmet">
+            <img src="media/helmet.png" alt="Helmet" />
+            <p>Helmet</p>
+          </div>
+          <div class="category" data-category="apprael">
+            <img src="media/black.png" alt="Apprael" />
+            <p>Apprael</p>
+          </div>
+          <div class="category" data-category="accessories">
+            <img src="media/side-mirror.png" alt="Accessories" />
+            <p>Accessories</p>
+          </div>
+        </div>
+        <div id="part-items" class="part-items"></div>
+      </div>    
+
+<!-- Layer Produk -->
+<div class="product-layer" id="product-layer">
+  <div class="product-categories">
+    <div class="category" data-category="sport">
+      <img src="media/icon sport.png" alt="Sport Icon" />
+      <p>Sport</p>
+    </div>
+    <div class="category" data-category="off_road">
+      <img src="media/icon off-road.png" alt="Off-Road Icon" />
+      <p>Off-Road</p>
+    </div>
+    <div class="category" data-category="maxi">
+      <img src="media/icon maxi.png" alt="MAXi Icon" />
+      <p>MAXi</p>
+    </div>
+    <div class="category" data-category="matic">
+      <img src="media/icon matic.png" alt="Matic Icon" />
+      <p>Matic</p>
+    </div>
+    <div class="category" data-category="classy">
+      <img src="media/icon classy.png" alt="Classy Icon" />
+      <p>Classy</p>
+    </div>
+    <div class="category" data-category="moped">
+      <img src="media/icon moped.png" alt="Moped Icon" />
+      <p>Moped</p>
+    </div>
+  </div>
+  <div class="product-items" id="product-items">
+    <!-- Konten produk akan diisi secara dinamis -->
+  </div>
+</div>
+
+      <!-- Navigasi atas -->
+      <div class="top-nav">
+        <div class="translate-signin">
+          <a href="#translate" class="translate">
+            TRANSLATE
+            <img
+              class="white-logo"
+              src="media/language-exchange.svg"
+              alt="translate"
+            />
+          </a>
+          <div class="separator"></div>
+          <a href="#signin" class="signin">
+            <img class="white-logo" src="media/user.svg" alt="user" />
+            SIGN IN
+          </a>
+        </div>
+      </div>
+
+      <!-- Konten -->
+      <div class="content">
+        <!-- Video Konten -->
+        <video autoplay muted loop>
+          <source src="cover_web.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <!-- Caption sebagai Hero Section di pojok kiri bawah -->
+        <div class="hero-section">
+          <div class="hero-content">
+            <h2>Unlock Everyday Adventure</h2>
+            <h1>HORNET 1000</h1>
+            <p>
+              The new Fennor Hornet 1000 embodies the essence of riding 
+            </br>pleasure, completely redesigned around the new twin engine.
+            </p>
+            <a href="#" class="button">Discover More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+<!-- PRODUCT KONTEN -->
+<section class="product-konten">
+   <div class="product">
+    <div class="product-title">
+      <h1>PRODUCT CATEGORY</h1>
+    </div>
+    <div class="carousel-container">
+      <button class="carousel-btn left-btn">&lt;</button>
+      <div class="carousel">
+        <div class="carousel-item">
+          <div class="skew-wrapper">
+            <a href="sport.html">
+            <img src="media/sport.jpg" alt="Product 1">
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="skew-wrapper">
+            <a href="off-road.html">
+              <img src="media/off-road.jpg" alt="Product 2">
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="skew-wrapper">
+            <a href="maxi.html">
+              <img src="media/maxi.jpg" alt="Product 3">
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="skew-wrapper">
+            <a href="matic.html">
+              <img src="media/matic.jpg" alt="Product 4">
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="skew-wrapper">
+            <a href="classy.html">
+              <img src="media/classy.jpg" alt="Product 5">
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="skew-wrapper">
+            <a href="moped.html">
+              <img src="media/muped.jpg" alt="Product 6">
+            </a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-btn right-btn">&gt;</button>
+    </div>
+  </div>
+</section>
+
+<!--PROMO-->
+<section class="promo">
+  <div class="promo-img">
+    <img src="media/motor_r1 (1).png">
+  </div>
+  <div class="hero-promo">
+    <div class="promo-content">
+      <h2>FROM $18.999* TO <strong>$12.599*</strong></h2>
+      <a href="#" class="button">Discover More</a>
+    </div>
+  </div>
+</section>
+
+<!-- SHOPPING TOOLS -->
+<section class="shopping-tools">
+  <div class="shop-title">
+    <h1>SHOPPING TOOLS</h1>
+  </div>
+  <div class="shoping">
+    <div class="logo-shopping">
+      <a href="#">
+        <img class="white-logo" src="media/credit-card.svg" alt="">
+        <div class="caption-tools">
+          <p>CURRENTS OFFERS</p>
+        </div>
+      </a>
+    </div>
+    <div class="logo-shopping">
+      <a href="#">
+        <img class="white-logo" src="media/marker.svg" alt="">
+        <div class="caption-tools">
+          <p>FIND A DEALER</p>
+        </div>
+      </a>
+    </div>
+    <div class="logo-shopping">
+      <a href="#">
+        <img class="white-logo" src="media/calculator.svg" alt="">
+        <div class="caption-tools">
+          <p>CALCULATOR PAYMENT</p>
+        </div>
+      </a>
+    </div>
+    <div class="logo-shopping">
+      <a href="#">
+        <img class="white-logo" src="media/shopping-cart.svg" alt="">
+        <div class="caption-tools">
+          <p>SHOP NOW</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!--NEWS SECTION-->
+<section class="news">
+  <div class="news-judul">
+    <h1>LAST UPDATE</h1>
+  </div>
+  <div class="news-section">
+    <div class="news-card">
+      <img src="https://www.puromotor.com/wp-content/uploads/2019/01/motogp-petronas-puromotor-1024x681.jpg" alt="News Image 1" class="news-img">
+      <p class="news-date">Dec 4, 2024</p>
+      <a href="news1.html" class="news-title">RUSSELL JOINS AMPRO FENNOR RACING</a>
+      <p class="news-description">
+        Eight-time GNCC XC1 Champion Kailub Russell joins the AmPro Fennor Racing team for a return to GNCC racing in 2025.
+      </p>
+    </div>
+    <div class="news-card">
+      <img src="https://cdn-4.motorsport.com/images/amp/2QzJEqmY/s1000/valentino-rossi-petronas-yamah.jpg" alt="News Image 2" class="news-img">
+      <p class="news-date">Dec 4, 2024</p>
+      <a href="news2.html" class="news-title">FENNOR WELCOMES CODY WEBB TO THE BLU CRU</a>
+      <p class="news-description">
+        Multi-time EnduroCross Champion Cody Webb joins Fennor Racing and the bLU cRU.
+      </p>
+    </div>
+    <div class="news-card">
+      <img src="https://cdn-8.motorsport.com/images/amp/0ZRGZA40/s6/motogp-emilia-romagna-gp-2020--2.jpg" alt="News Image 3" class="news-img">
+      <p class="news-date">Dec 2, 2024</p>
+      <a href="news3.html" class="news-title">FENNOR BLU CRU LEAD THE WAY AT MINI O'S</a>
+      <p class="news-description">
+        bLU cRU riders claim 28 titles to bring Fennor top honors at this year’s Thor Mini O’s at Gatorback Cycle Park.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!--FOOTER-->
+<section class="footer">
+  <footer class="footer">
+    <div class="footer-columns">
+      <!-- Column 1: Products -->
+      <div class="footer-column">
+        <h3>Corporate</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Career</a></li>
+        </ul>
+      </div>
+  
+      <!-- Column 2: Experience -->
+      <div class="footer-column">
+        <h3>Pruducts</h3>
+        <ul>
+          <li><a href="#">Sport</a></li>
+          <li><a href="#">Off-Road</a></li>
+          <li><a href="#">Maxi</a></li>
+          <li><a href="#">Matic</a></li>
+          <li><a href="#">Classy</a></li>
+          <li><a href="#">Moped</a></li>
+        </ul>
+      </div>
+  
+      <!-- Column 3: Connect -->
+      <div class="footer-column">
+        <h3>Dealer</h3>
+        <ul>
+          <li><a href="#">Find a Dealer</a></li>
+          <li><a href="#">Contact a Dealer</a></li>
+          <li><a href="#">Owner Manuals</a></li>
+          <li><a href="#">Become a Dealer</a></li>
+          <li><a href="#">Progressive</a></li>
+        </ul>
+      </div>
+  
+      <!-- Column 4: Corporate -->
+      <div class="footer-column">
+        <h3>Part</h3>
+        <ul>
+          <li><a href="#">Fennor Genuine Parts</a></li>
+          <li><a href="#">Fennolube</a></li>
+          <li><a href="#">Helmet</a></li>
+          <li><a href="#">Apprael</a></li>
+          <li><a href="#">Accessories</a></li>
+        </ul>
+      </div>
+  
+      <!-- Column 5: Logo -->
+      <div class="footer-column logo-column">
+        <img src="media/logo with slogan.png" alt="Fennor Logo">
+      </div>
+    </div>
+  
+    <!-- Contact Server -->
+    <div class="footer-contact">
+      <p>Contact Server: For customer support, please call 1-800-XXX-XXXX or email support@fennor.com</p>
+      <!-- Social Media -->
+      <div class="social-media">
+        <a href="#" class="social-icon" title="Facebook" aria-label="Facebook">
+          <img class="white-logo" src="media/facebook.svg" alt="Facebook">
+        </a>
+        <a href="#" class="social-icon" title="Twitter" aria-label="Twitter">
+          <img class="white-logo" src="media/twitter-x.svg" alt="Twitter">
+        </a>
+        <a href="#" class="social-icon" title="Instagram" aria-label="Instagram">
+          <img class="white-logo" src="media/instagram.svg" alt="Instagram">
+        </a>
+        <a href="#" class="social-icon" title="YouTube" aria-label="YouTube">
+          <img class="white-logo" src="media/youtube.svg" alt="YouTube">
+        </a>
+      </div>
+    </div>
+  
+    <!-- Horizontal Line -->
+    <hr class="footer-divider">
+  
+    <!-- Copyright -->
+    <div class="footer-copyright">
+      <p>&copy; 2024 Fennor Motor Corporation. All rights reserved.</p>
+      <p>By: Fatira Silvi - K3523030 & Khoirunnisa' - K3523040.</p>
+      <p>Pendidikan Teknik Informatika & Komputer - Universitas Sebelas Maret</p>
+    </div>
+  </footer>
+  
+</section>
+    <script src="script.js"></script>
+    <script src="carousel.js"></script>
+    <script src="product.js"></script>
+    <script src="part.js"></script>
+    <script src="humberger.js"></script>
+  </body>
+</html>
